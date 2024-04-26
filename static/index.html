@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cheeky Advisor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://unpkg.com/htmx.org@1.5.0"></script>
+</head>
+
+<body>
+  <nav class="navbar fixed-bottom bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand display-1"></a>
+    </div>
+  </nav>
+  <div class="container">
+    <p class="title">welcome. are you ready for some random, yet sage advice?</p>
+    <button id="advice-btn" class="btn btn-primary" hx-get="/advice" hx-target="#advice-text">
+      random advice please
+    </button>
+    <p id="advice-text" class="mt-3"></p>
+  </div>
+</body>
+
+</html>
